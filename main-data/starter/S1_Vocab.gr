@@ -1,0 +1,193 @@
+# Singular and mass nouns.  Notice that only the
+# ones that start with consonants get our Noun tag.
+1	Noun	!
+
+# Determiners.
+1	Det	    a
+1	Det	    another
+1	Det	    any
+1	Det	    each
+1	Det	    every
+1	Det 	no
+1	Det 	that
+1	Det 	the
+1	Det 	this
+
+# Plural Determiners
+1   DetP    the
+1   DetP    no
+1   DetP    any
+
+# Prepositions.
+1	Prep	above
+1	Prep	across
+1	Prep	at
+1	Prep	below
+1	Prep	by
+1	Prep	for
+1	Prep	from
+1	Prep	into
+1	Prep	near
+1	Prep	of
+1	Prep	on
+1	Prep	over
+1	Prep	through
+1	Prep	with
+
+# Proper nouns.  Note that our Proper tag is just for people.
+1	Proper	!
+
+# Plural proper nouns.
+1	PlProper    !
+
+# More proper nouns, not people.
+1	PObj	!
+
+# End-of-sentence.
+1	End	    !
+1	End	    .
+1	EndQ	?
+
+# Pauses.
+1	Pause	,
+1	Pause	...
+1	Pause	--
+1	Pause	;
+1	Pause	:
+
+# Coordinating conjunctions.
+1	CConj	and
+1	CConj	but
+1	Misc	or
+1	Misc	either
+1	Misc	nor
+1	Misc	neither
+1	Misc	so
+
+# Numbers.
+1	Num	    !
+
+# Expletive.
+1	Misc	there
+
+# Subordinating conjunctions.
+1	SubConj	that
+1	SubConj	so
+1	SubConj	while
+1	SubConj	because
+1	SubConj	if
+
+# Adjectives.
+1	Adj 	!
+
+# Comparative adjectives.
+1	CAdj	!
+
+# Superlative adjectives.
+1	SAdj	!
+
+# Plural nouns.
+1	PlNoun	!
+
+# Personal pronouns.
+1	SPro	he
+1	SPro	it
+1	SPro	one
+1	SPro	she
+1	SPro	they
+1	OProP	them
+1	OProS	her
+1	OProS	him
+1   OProS   it
+1	OProS	one
+
+# Possessive personal pronouns
+1	PossPro	her
+1	PossPro	his
+1	PossPro	its
+1	PossPro	their
+
+# Adverbs.
+1	Adv	!
+
+# 'do'/'does'
+1	DoP	do
+1	DoS	does
+
+# 'to'
+1	To	to
+
+# 'not'
+1	Not	not
+
+# Verbs (third person singular present).
+# Note that only transitive verbs get our VerbT tag,
+# and some of those could also function as intransitives!
+1	VerbT	!
+
+# Verbs (base form).
+1   BVerb   !
+
+# Verbs (past tense).
+1	PTVerb	!
+
+# Verbs (past tense, transitive)
+1	IVPt	!
+
+# Verbs (present participles).
+1	VPrP	!
+
+# Verbs (past participle).
+1	VPaPa	!
+
+# More third person singular verbs.
+1	SiV	    !
+
+# Verbs (present, plural, third person).
+1	PlV   !
+
+# Modals.
+1	Mod	can
+1	Mod	could
+1	Mod	may
+1	Mod	might
+1	Mod	must
+1	Mod	ought to
+1	Mod	shall
+1	Mod	should
+1	Mod	will
+1	Mod	would
+
+#present plural questions
+1   PrPlQ    are
+1   PrPlQ    were
+
+#present singular questions
+1   PrSiQ   is
+1   PrSiQ   was
+
+# Wh-determiners.
+1	WhDet	that
+1	WhDet	what
+1	WhDet	which
+1	WhDet	who
+
+# Wh-pronouns.
+1	Wh      what
+1	Wh      who
+
+# Wh possessive pronoun.
+1	Misc	whose
+
+# Wh-adverbs
+1	WhA	    how
+1	WhA	    when
+1	WhA	    where
+1	WhA	    why
+
+# "Connectors"
+1	Con	    so
+1	Con	    while
+1	Con 	because
+1	Con 	if
+1	Con	    when
