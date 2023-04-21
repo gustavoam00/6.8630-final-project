@@ -28,11 +28,15 @@
 1   Noun    party
 1   Noun    bar
 1   Noun    promo
+1   Noun    everybody
+1   Noun    drama
+1   Noun    shit
 
 # Plural nouns.
 1	PlNoun	clicks
 1   PlNoun  friends
 1   PlNoun  sales
+1   PlNoun  problems
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
@@ -48,6 +52,7 @@
 # Determiners.
 1	Det	    a
 1	Det	    another
+1   Det     some
 1	Det	    any
 1	Det	    each
 1	Det	    every
@@ -82,6 +87,7 @@
 1   Prep    out of
 1   Prep    outta
 1   Prep    up
+1   Prep    about
 
 # Numbers.
 1	Num	    more
@@ -112,6 +118,11 @@
 1   Adj     starving
 1   Adj     last
 1   Adj     higher
+1   Adj     loud
+1   Adj     small
+1   Adj     dangerous
+
+1   Adj     Int Adj
 
 # Comparative adjectives.
 1	CAdj	more
@@ -138,6 +149,7 @@
 1	OPro	him
 1   OPro    it
 1	OPro	one
+1   OPro    me
 
 #Demonstrative pronoun
 1   DPro    this
@@ -166,6 +178,8 @@
 1   AdvT    someday
 1   AdvT    in awhile
 1   AdvT    all of PossDet life
+1   AdvT    now
+1   AdvT    recently
 
 1   T       year
 1   T       time
@@ -195,9 +209,16 @@
 1   BVerb   find
 1   BVerb   save
 1   BVerb   blow
+1   BVerb   become
+1   BVerb   hold
+1   BVerb   believe
+1   BVerb   make
+1   BVerb   stop
+1   BVerb   get
 
 # Verbs (past tense).
 1	PTV	    forgot
+1   PTV     said
 
 # Verbs (past tense, transitive)
 1	PTVT	skipped
@@ -209,10 +230,12 @@
 1   VPrPa   missing
 1   VPrPa   starving
 1   VPrPa   doing
+1   VPrPa   talking
 
 # Verbs (past participle).
 1	VPaPa	gone
 1   VPaPa   seen
+1   VPaPa   caught
 
 # More third person singular verbs.
 1	SiV	    !
@@ -233,6 +256,7 @@
 1	Mod	will
 1   Mod won't
 1	Mod	would
+1   Mod wouldn't
 
 #present plural questions
 1   PrPlQ    are
