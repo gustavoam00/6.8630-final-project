@@ -8,6 +8,8 @@
 ...
 (
 )
+'s
+'
 a
 about
 above
@@ -21,7 +23,7 @@ again
 ah
 ah-ah-ah
 ain't
-album's
+album
 all
 alone
 am
@@ -89,7 +91,7 @@ can't
 care
 Carrell
 caught
-cause
+'cause
 celebrities
 charts
 Chicago

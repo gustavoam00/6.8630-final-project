@@ -1,0 +1,160 @@
+# S1 is the start symbol of the grammar you construct
+60	START	S1
+20  START   S2
+10  START   S3
+5   START   S4
+1   START   S5
+5   START   S6
+
+###S1
+1   S1      NPVP
+1   S1      NPVP PP
+1   S1      NPVP AP
+1   S1      NPVP PP AP
+1   S1      AP NPVP
+1   S1      AP NPVP AP
+1   S1      SubConj NPVP
+1   S1      SubConj NPVP PP
+1   S1      SubConj NPVP AP
+
+#imperative sentences
+1   S1      BVerb 
+1   S1      BVerb NPO
+1   S1      BVerb PhV
+1   S1      tryna PhV PP
+1   S1      ImpAux BVerb
+1   S1      ImpAux BVerb NPO
+1   S1      ImpAux BVerb NPO AP
+
+1   ImpAux  don't
+1   ImpAux  don't you
+
+# Answer?
+
+1   S1      no
+1   S1      yeah
+1   S1      yep
+
+# Sounds?
+1   Sounds  yep yep
+
+###S2 - questions
+
+10  S2      Q ?
+1   S2      CConj Q ?
+
+1   Q       S1
+1   Q       Mod NP BVerb PP AP
+1   Q       Mod NP BVerb NPO PP
+
+###S3 - is an S1 that starts with a conjucntion
+
+1   S3      CConj S1
+
+###S4 - combines multiple S1s
+
+1   S4     S1 , S1
+1   S4     S1 , S1 , S1
+1   S4     S5 , S5 
+
+###S5 - PP as a whole sentence
+
+1  S5      PP
+1  S5      CAdj PP
+
+###S6 - sentenes with Sounds
+
+1   S6      Sounds S1
+
+# Sounds?
+1   Sounds  yep yep
+
+#############
+#NPVP - any time we want to use a NP followed by VP, makes it easier to control for agreement (I'm, you're)
+
+1   NPVP    NP VP
+1   NPVP    NP VP NPO
+1   NPVP    NP VP NPP
+1   NPVP    NP VP NPO NPO #indirect obj and direct obj
+1   NPVP    you're
+1   NPVP    you're VPrPa
+1   NPVP    I'll be Exp
+1   NPVP    I'm gonna BVerb DPro
+1   NPVP    I'm VPrPa NPO
+
+1   NPVP    NPP VPP
+1   NPVP    they're
+
+#############
+#Verb Phrases
+
+1   VP      PTV
+1   VP      BVerb
+1   VP      Mod BVerb
+1   VP      Mod be VPrPa
+1   VP      Mod have been VPrPa
+1   VP      Mod have been Adj
+1   VP      have been VPrPa
+1   VP      PTVT
+1   VP      haven't VPaPa
+
+1   VPP     BVerb
+1   VPP     Mod have been Adj
+
+
+# Phrasal Verb
+1   PhV     BVerb Prep
+
+#############
+#Adverb Phrases
+
+20   AP      Adv
+10   AP      Int Adv
+1    AP      Int Int Adv 
+1    AP      AdvT
+1    AP      a lot
+1    AP      that far
+1    AP      maybe that's WhA
+1    AP      down PP
+
+##############
+#Noun Phrasess
+
+1   NP      SPro
+1   NP      NPX
+
+1   NPO     OPro
+1   NPO     NPX
+
+
+10  NPX     Det Nbar
+1   NPX     PossDet Nbar
+1   NPX     Noun
+1   NPX     Proper
+1   NPX     Wh  NPVP
+
+1   NPP     Num NbarP
+1   NPP     DetP NbarP
+1   NPP     PossDet PlNoun
+1   NPP     PlNoun
+
+10	Nbar	Noun
+1   Nbar    Adj Noun
+1   Nbar    Proper
+1   Nbar    PObj
+
+10  NbarP   PlNoun
+1   NbarP   PossDet PlNoun
+
+
+###############
+#Prepositional Phrasess
+
+20   PP      Prep NPO
+20   PP      Prep NPP #later change to NPPO
+10   PP      Prep NbarP
+10   PP      Prep Nbar
+1    PP      PP PP
+1    PP      not PP
+
+

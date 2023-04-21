@@ -1,0 +1,269 @@
+# End-of-sentence.
+1	End	    !
+1	End	    .
+1	EndQ	?
+
+# Pauses.
+1	Pause	,
+1	Pause	...
+1	Pause	--
+1	Pause	;
+1	Pause	:
+
+# Singular and mass nouns.  Notice that only the
+# ones that start with consonants get our Noun tag.
+1	Noun	mind
+1   Noun    time
+1   Noun    prom
+1   Noun    morning
+1   Noun    year
+1   Noun    click
+1   Noun    ear
+1   Noun    job
+1   Noun    shot
+1   Noun    life
+1   Noun    artist
+1   Noun    dinner
+1   Noun    album
+1   Noun    party
+1   Noun    bar
+1   Noun    promo
+
+# Plural nouns.
+1	PlNoun	clicks
+1   PlNoun  friends
+1   PlNoun  sales
+
+# Proper nouns.  Note that our Proper tag is just for people.
+1	Proper	Elvis Duran
+1   Proper  Friday
+
+# Plural proper nouns.
+1	PlProper    !
+
+# More proper nouns, not people.
+1	PObj	Chicago
+1   PObj    Bahamas
+
+# Determiners.
+1	Det	    a
+1	Det	    another
+1	Det	    any
+1	Det	    each
+1	Det	    every
+1	Det 	no
+1	Det 	that
+1	Det 	the
+1	Det 	this
+
+# Plural Determiners
+1   DetP    the
+1   DetP    no
+1   DetP    any
+1   DetP    all
+
+# Prepositions.
+1	Prep	above
+1	Prep	across
+1	Prep	at
+1	Prep	below
+1	Prep	by
+1	Prep	for
+1	Prep	from
+1	Prep	into
+1	Prep	near
+1	Prep	of
+1	Prep	on
+1   Prep    in
+1	Prep	over
+1	Prep	through
+1	Prep	with
+1   Prep    out
+1   Prep    out of
+1   Prep    outta
+1   Prep    up
+
+# Numbers.
+1	Num	    more
+
+# Expletive.
+1	Exp	    there
+1   Exp     here
+
+# Coordinating conjunctions.
+1	CConj	and
+1	CConj	but
+1	CConj	or
+1	Misc	either
+1	Misc	nor
+1	Misc	neither
+1	Misc	so
+
+# Subordinating conjunctions.
+1	SubConj	that
+1	SubConj	so
+1	SubConj	while
+1	SubConj	because
+1   SubConj 'cause
+1	SubConj	if
+
+# Adjectives.
+1	Adj 	real
+1   Adj     starving
+1   Adj     last
+1   Adj     higher
+
+# Comparative adjectives.
+1	CAdj	more
+1   Adj     higher
+
+# Superlative adjectives.
+1	SAdj	!
+
+# Subject pronouns.
+1   SPro    I
+1   SPro    you
+1	SPro	he
+1	SPro	she
+1	SPro	it
+1	SPro	one
+1   SPro    we
+1	SPro	they
+
+#Object pronouns (plural and singular)
+1	OPro    them
+1   OPro    us
+1   OPro    you
+1	OPro	her
+1	OPro	him
+1   OPro    it
+1	OPro	one
+
+#Demonstrative pronoun
+1   DPro    this
+1   DPro    that
+1   DPro    it
+
+# Possessive Determiners
+1   PossDet my
+1   PossDet your
+1	PossDet	her
+1	PossDet	his
+1	PossDet	its
+1   PossDet our
+1	PossDet	their
+
+1   PossDet Nbar 's
+
+# Adverbs
+1	Adv	    hard
+1   Adv     behind
+1   Adv     maybe
+
+# Averb time
+1   AdvT    next T
+1   AdvT    this T
+1   AdvT    someday
+1   AdvT    in awhile
+1   AdvT    all of PossDet life
+
+1   T       year
+1   T       time
+
+# Intensifiers
+1   Int     so
+1   Int     damn
+
+# Verbs (third person singular present).
+# Note that only transitive verbs get our VerbT tag,
+# and some of those could also function as intransitives!
+1	VerbT	!
+
+# Verbs (base form).
+1   BVerb   be
+1   BVerb   hang
+1   BVerb   come
+1   BVerb   like
+1   BVerb   leave
+1   BVerb   complain
+1   BVerb   go
+1   BVerb   follow
+1   BVerb   miss
+1   BVerb   say
+1   BVerb   have
+1   BVerb   haven't
+1   BVerb   find
+1   BVerb   save
+1   BVerb   blow
+
+# Verbs (past tense).
+1	PTV	    forgot
+
+# Verbs (past tense, transitive)
+1	PTVT	skipped
+1   PTVT    missed
+
+# Verbs (present participles).
+1	VPrPa	working
+1   VPrPa   mourning
+1   VPrPa   missing
+1   VPrPa   starving
+1   VPrPa   doing
+
+# Verbs (past participle).
+1	VPaPa	gone
+1   VPaPa   seen
+
+# More third person singular verbs.
+1	SiV	    !
+
+# Verbs (present, plural, third person).
+1	PlV   !
+
+# Modals.
+1	Mod	can
+1   Mod can't
+1	Mod	could
+1	Mod	may
+1	Mod	might
+1	Mod	must
+1	Mod	ought to
+1	Mod	shall
+1	Mod	should
+1	Mod	will
+1   Mod won't
+1	Mod	would
+
+#present plural questions
+1   PrPlQ    are
+1   PrPlQ    were
+
+#present singular questions
+1   PrSiQ   is
+1   PrSiQ   was
+
+# Wh-determiners.
+1	WhDet	that
+1	WhDet	what
+1	WhDet	which
+1	WhDet	who
+
+# Wh-pronouns.
+1	Wh      what
+1	Wh      who
+
+# Wh possessive pronoun.
+1	Misc	whose
+
+# Wh-adverbs
+1	WhA	    how
+1	WhA	    when
+1	WhA	    where
+1	WhA	    why
+
+# "Connectors"
+1	Con	    so
+1	Con	    while
+1	Con 	because
+1	Con 	if
+1	Con	    when

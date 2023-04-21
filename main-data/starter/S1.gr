@@ -1,4 +1,0 @@
-# S1 is the start symbol of the grammar you construct
-99	START	S1
-
-1   S1  !
