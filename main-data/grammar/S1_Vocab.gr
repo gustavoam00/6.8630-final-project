@@ -31,12 +31,19 @@
 1   Noun    everybody
 1   Noun    drama
 1   Noun    shit
+1   Noun    reality
+1   Noun    love
 
 # Plural nouns.
 1	PlNoun	clicks
 1   PlNoun  friends
 1   PlNoun  sales
 1   PlNoun  problems
+1   PlNoun  reality shows
+1   PlNoun  lives
+1   PlNoun  story lines
+1   PlNoun  lovers
+1   PlNoun  rumours
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
@@ -48,6 +55,7 @@
 # More proper nouns, not people.
 1	PObj	Chicago
 1   PObj    Bahamas
+1   PObj    MTV
 
 # Determiners.
 1	Det	    a
@@ -88,6 +96,8 @@
 1   Prep    outta
 1   Prep    up
 1   Prep    about
+1   Prep    like
+1   Prep    to
 
 # Numbers.
 1	Num	    more
@@ -121,6 +131,9 @@
 1   Adj     loud
 1   Adj     small
 1   Adj     dangerous
+1   Adj     boring
+1   Adj     addicted
+1   Adj     exciting
 
 1   Adj     Int Adj
 
@@ -171,6 +184,9 @@
 1	Adv	    hard
 1   Adv     behind
 1   Adv     maybe
+1   Adv     probably
+1   Adv     instead
+1   Adv     all
 
 # Averb time
 1   AdvT    next T
@@ -215,6 +231,8 @@
 1   BVerb   make
 1   BVerb   stop
 1   BVerb   get
+1   BVerb   act
+1   BVerb   break
 
 # Verbs (past tense).
 1	PTV	    forgot
@@ -223,6 +241,8 @@
 # Verbs (past tense, transitive)
 1	PTVT	skipped
 1   PTVT    missed
+1   PTVT    traded
+1   PTVT    addicted
 
 # Verbs (present participles).
 1	VPrPa	working
@@ -238,7 +258,7 @@
 1   VPaPa   caught
 
 # More third person singular verbs.
-1	SiV	    !
+1	SiV	    blows
 
 # Verbs (present, plural, third person).
 1	PlV   !

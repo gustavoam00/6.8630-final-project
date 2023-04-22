@@ -14,19 +14,22 @@
 1   S1      NPVP PP AP
 1   S1      AP NPVP
 1   S1      AP NPVP AP
+1   S1      AP NPVP PP
+1   S1      AP SubConj NPVP
 1   S1      SubConj NPVP
 1   S1      SubConj NPVP PP
 1   S1      SubConj NPVP AP
 1   S1      NPX WhDet NPVP
-1   S1      NP is Adj
-1   S1      NPP are Adj
 
 #imperative sentences
 1   S1      BVerb 
 1   S1      BVerb Prep
 1   S1      BVerb PP
 1   S1      BVerb NPO
+1   S1      BVerb NPO PP 
+1   S1      BVerb NPO PP AP
 1   S1      BVerb PhV
+1   S1      PhV
 1   S1      tryna PhV PP
 1   S1      ImpAux BVerb
 1   S1      ImpAux BVerb NPO
@@ -98,13 +101,16 @@
 1   NPVP    NP VP NPO NPO #indirect obj and direct obj
 1   NPVP    you're
 1   NPVP    you're VPrPa
-1   NPVP    we're VPaPa Prep
+1   NPVP    we're PhV2
 1   NPVP    I'll be Exp
 1   NPVP    I'm gonna BVerb DPro
 1   NPVP    I'm VPrPa NPO
-1   NPVP    I'm VPaPa Prep
-1   NPVP    I'm Int VPaPa Prep
+1   NPVP    I'm PhV2
 1   NPVP    Nbar 's VPrPa
+1   NPVP    NP is Adj
+1   NPVP    NPP are Adj
+1   NPVP    we're Adj
+1   NPVP    it's Adj
 
 1   NPVP    NPP VPP
 1   NPVP    they're
@@ -121,6 +127,8 @@
 1   VP      have been VPrPa
 1   VP      PTVT
 1   VP      haven't VPaPa
+1   VP      SiV
+1   VP      PhV 
 
 1   VPP     BVerb
 1   VPP     Mod have been Adj
@@ -128,6 +136,11 @@
 
 # Phrasal Verb
 1   PhV     BVerb Prep
+
+# Phrasal Verb 2
+
+1   PhV2    VPaPa Prep
+1   PhV2    Int VPaPa Prep
 
 #############
 #Adverb Phrases
@@ -156,11 +169,13 @@
 1   NPX     Noun
 1   NPX     Proper
 1   NPX     Wh  NPVP
+1   NPX     it all
 
 1   NPP     Num NbarP
 1   NPP     DetP NbarP
-1   NPP     PossDet PlNoun
+1   NPP     PossDet NbarP
 1   NPP     PlNoun
+1   NPP     PlNoun and PlNoun
 
 10	Nbar	Noun
 1   Nbar    Adj Noun
@@ -169,6 +184,7 @@
 
 10  NbarP   PlNoun
 1   NbarP   PossDet PlNoun
+1   NbarP   Adj PlNoun
 
 
 ###############
@@ -178,6 +194,7 @@
 20   PP      Prep NPP #later change to NPPO
 10   PP      Prep NbarP
 10   PP      Prep Nbar
+1    PP      Prep PObj NPP
 1    PP      PP PP
 1    PP      not PP
 
