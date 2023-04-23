@@ -6,6 +6,12 @@
 1   START   S5
 5   START   S6
 1   START   S7
+1   START   S10
+
+1   S      S1
+1   S      S3  
+1   S      S4
+1   S      S5
 
 ###S1
 1   S1      NPVP
@@ -20,6 +26,8 @@
 1   S1      SubConj NPVP PP
 1   S1      SubConj NPVP AP
 1   S1      NPX WhDet NPVP
+1   S1      that's NPO
+1   S1      PhV2 PP
 
 #imperative sentences
 1   S1      BVerb 
@@ -65,17 +73,15 @@
 
 ###S4 - combines multiple S1s
 
-1   S4     S1 , S1
-1   S4     S1 , S1 , S1
-1   S4     S5 , S5 
-
-1   S4     S1
-1   S4     S4 SubConj S1
+50   S4     S
+10   S4     S , S
+10   S4     S SubConj S
+1    S4     S S
 
 ###S5 - PP as a whole sentence
 
-1  S5      PP
-1  S5      CAdj PP
+1  S5       PP
+1  S5       CAdj PP
 
 ###S6 - sentenes with Sounds
 
@@ -89,50 +95,79 @@
 
 ###S7 - ( sentences )
 
-5   S7      ( S1 )
-1   S7      ( S4 )
+1   S7      ( S )
+
+###S10 - super ungrammatical sentences?
+
+1   S10     WhA NPP
+1   S10     NP PP is
 
 #############
 #NPVP - any time we want to use a NP followed by VP, makes it easier to control for agreement (I'm, you're)
 
 1   NPVP    NP VP
 1   NPVP    NP VP NPO
+1   NPVP    NPO NP VP
+1   NPVP    NPP NP VP
 1   NPVP    NP VP NPP
 1   NPVP    NP VP NPO NPO #indirect obj and direct obj
-1   NPVP    you're
-1   NPVP    you're VPrPa
-1   NPVP    we're PhV2
+1   NPVP    TB
+1   NPVP    TB not
+1   NPVP    TB VPrPa
+1   NPVP    TB PhV2
+1   NPVP    TB gonna BVerb DPro
+1   NPVP    TB VPrPa NPO
+1   NPVP    TB PhV2
+1   NPVP    TB Adj
 1   NPVP    I'll be Exp
-1   NPVP    I'm gonna BVerb DPro
-1   NPVP    I'm VPrPa NPO
-1   NPVP    I'm PhV2
+1   NPVP    you'll AP BVerb NPO
 1   NPVP    Nbar 's VPrPa
-1   NPVP    NP is Adj
-1   NPVP    NPP are Adj
-1   NPVP    we're Adj
-1   NPVP    it's Adj
 
 1   NPVP    NPP VPP
-1   NPVP    they're
+
+#to be
+1   TB      I'm
+1   TB      I am
+1   TB      you're
+1   TB      you are
+1   TB      he's
+1   TB      he is
+1   TB      she's
+1   TB      she is
+1   TB      they're
+1   TB      they are
+1   TB      we're
+1   TB      we are
+1   TB      it's
+1   TB      it is
+1   TB      NP is
+1   TB      NPP is  #ungrmmatical but used
+1   TB      NPP are
 
 #############
 #Verb Phrases
 
 1   VP      PTV
 1   VP      BVerb
+1   VP      BVerb and BVerb
 1   VP      Mod BVerb
 1   VP      Mod be VPrPa
 1   VP      Mod have been VPrPa
 1   VP      Mod have been Adj
-1   VP      have been VPrPa
 1   VP      PTVT
-1   VP      haven't VPaPa
 1   VP      SiV
-1   VP      PhV 
+1   VP      PhV
+
+1   VP      have been VPrPa
+1   VP      haven't VPaPa
+1   VP      don't VPaPa 
+1   VP      VPaPa
+1   VP      don't BVerb NPO
 
 1   VPP     BVerb
 1   VPP     Mod have been Adj
 
+1   VP      AP VP
 
 # Phrasal Verb
 1   PhV     BVerb Prep
@@ -141,6 +176,7 @@
 
 1   PhV2    VPaPa Prep
 1   PhV2    Int VPaPa Prep
+1   PhV2    VPrPa Prep
 
 #############
 #Adverb Phrases
@@ -163,12 +199,13 @@
 1   NPO     OPro
 1   NPO     NPX
 
-
 10  NPX     Det Nbar
 1   NPX     PossDet Nbar
 1   NPX     Noun
+1   NPX     Adj Noun
 1   NPX     Proper
-1   NPX     Wh  NPVP
+1   NPX     Wh NPVP
+1   NPX     Wh PossPro is
 1   NPX     it all
 
 1   NPP     Num NbarP

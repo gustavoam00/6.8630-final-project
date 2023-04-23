@@ -12,6 +12,7 @@
 
 # Singular and mass nouns.  Notice that only the
 # ones that start with consonants get our Noun tag.
+1   Noun    thing
 1	Noun	mind
 1   Noun    time
 1   Noun    prom
@@ -29,10 +30,18 @@
 1   Noun    bar
 1   Noun    promo
 1   Noun    everybody
+1   Noun    nobody
 1   Noun    drama
 1   Noun    shit
 1   Noun    reality
 1   Noun    love
+1   Noun    name
+1   Noun    everyone
+1   Noun    TV
+
+1   Noun    20 grand
+1   Noun    LA street
+1   Noun    all time low
 
 # Plural nouns.
 1	PlNoun	clicks
@@ -44,6 +53,11 @@
 1   PlNoun  story lines
 1   PlNoun  lovers
 1   PlNoun  rumours
+1   PlNoun  haters
+1   PlNoun  paparazzi
+1   PlNoun  shirts
+1   PlNoun  habits
+1   PlNoun  quirks
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
@@ -59,6 +73,7 @@
 
 # Determiners.
 1	Det	    a
+1   Det     an
 1	Det	    another
 1   Det     some
 1	Det	    any
@@ -96,6 +111,7 @@
 1   Prep    outta
 1   Prep    up
 1   Prep    about
+1   Prep    bout
 1   Prep    like
 1   Prep    to
 
@@ -125,6 +141,7 @@
 
 # Adjectives.
 1	Adj 	real
+1   Adj     best
 1   Adj     starving
 1   Adj     last
 1   Adj     higher
@@ -134,8 +151,12 @@
 1   Adj     boring
 1   Adj     addicted
 1   Adj     exciting
+1   Adj     famous
+1   Adj     weird
+1   Adj     favorite
 
 1   Adj     Int Adj
+1   Adj     not Adj
 
 # Comparative adjectives.
 1	CAdj	more
@@ -156,6 +177,7 @@
 
 #Object pronouns (plural and singular)
 1	OPro    them
+1   OPro    em
 1   OPro    us
 1   OPro    you
 1	OPro	her
@@ -180,13 +202,17 @@
 
 1   PossDet Nbar 's
 
+1   PossPro mine
+
 # Adverbs
 1	Adv	    hard
 1   Adv     behind
-1   Adv     maybe
-1   Adv     probably
 1   Adv     instead
 1   Adv     all
+
+1   Adv     never
+1   Adv     maybe
+1   Adv     probably
 
 # Averb time
 1   AdvT    next T
@@ -210,6 +236,7 @@
 1	VerbT	!
 
 # Verbs (base form).
+1   BVerb   do
 1   BVerb   be
 1   BVerb   hang
 1   BVerb   come
@@ -233,16 +260,23 @@
 1   BVerb   get
 1   BVerb   act
 1   BVerb   break
+1   BVerb   hate
+1   BVerb   matter
+1   BVerb   care
+1   BVerb   hear
 
 # Verbs (past tense).
 1	PTV	    forgot
 1   PTV     said
+1   PTV     blew
 
 # Verbs (past tense, transitive)
 1	PTVT	skipped
 1   PTVT    missed
 1   PTVT    traded
-1   PTVT    addicted
+1   PTVT    overheard
+1   PTVT    heard
+
 
 # Verbs (present participles).
 1	VPrPa	working
@@ -251,14 +285,18 @@
 1   VPrPa   starving
 1   VPrPa   doing
 1   VPrPa   talking
+1   VPrPa   throwing
 
 # Verbs (past participle).
 1	VPaPa	gone
 1   VPaPa   seen
 1   VPaPa   caught
+1   VPaPa   got
 
 # More third person singular verbs.
 1	SiV	    blows
+1   SiV     judges
+1   SiV     knows
 
 # Verbs (present, plural, third person).
 1	PlV   !
@@ -295,9 +333,11 @@
 # Wh-pronouns.
 1	Wh      what
 1	Wh      who
+1   Wh      where
 
 # Wh possessive pronoun.
 1	Misc	whose
+
 
 # Wh-adverbs
 1	WhA	    how
