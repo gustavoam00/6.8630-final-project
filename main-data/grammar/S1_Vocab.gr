@@ -37,11 +37,28 @@
 1   Noun    love
 1   Noun    name
 1   Noun    everyone
+1   Noun    someone
 1   Noun    TV
+1   Noun    heart
+1   Noun    song
+1   Noun    human
+1   Noun    record
+1   Noun    ADHD
+1   Noun    mouth
+1   Noun    mouthful
+1   Noun    attention
+1   Noun    no one
+1   Noun    clock
+1   Noun    voice
+1   Noun    lesson
+1   Noun    press
 
 1   Noun    20 grand
 1   Noun    LA street
 1   Noun    all time low
+1   Noun    mouth full
+1   Noun    three minutes and thirty seconds
+1   Noun    three-thirty
 
 # Plural nouns.
 1	PlNoun	clicks
@@ -58,10 +75,16 @@
 1   PlNoun  shirts
 1   PlNoun  habits
 1   PlNoun  quirks
+1   PlNoun  charts
+1   PlNoun  lyrics
+1   PlNoun  rappers
+1   PlNoun  headphones
+1   PlNoun  people
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
 1   Proper  Friday
+1   Proper  Ed Sheeran
 
 # Plural proper nouns.
 1	PlProper    !
@@ -106,6 +129,7 @@
 1	Prep	over
 1	Prep	through
 1	Prep	with
+1   Prep    without
 1   Prep    out
 1   Prep    out of
 1   Prep    outta
@@ -138,6 +162,15 @@
 1	SubConj	because
 1   SubConj 'cause
 1	SubConj	if
+1   SubConj before
+
+#Connectors, not sure difference with above
+1	Con	    so
+1	Con	    while
+1	Con 	because
+1	Con 	if
+1	Con	    when
+1   Con     then
 
 # Adjectives.
 1	Adj 	real
@@ -154,9 +187,22 @@
 1   Adj     famous
 1   Adj     weird
 1   Adj     favorite
+1   Adj     aching
+1   Adj     lazy
+1   Adj     full
+1   Adj     doubtful
+1   Adj     slow
+1   Adj     fast
+1   Adj     helpless
+1   Adj     selfless
+1   Adj     nervous
+1   Adj     wealthy
+1   Adj     wordy
+1   Adj     whole
 
 1   Adj     Int Adj
 1   Adj     not Adj
+1   Adj     just Adj
 
 # Comparative adjectives.
 1	CAdj	more
@@ -187,9 +233,12 @@
 1   OPro    me
 
 #Demonstrative pronoun
-1   DPro    this
-1   DPro    that
-1   DPro    it
+1   DProS    this
+1   DProS    that
+1   DProS    it
+
+1   DProP    these
+1   DProP    those
 
 # Possessive Determiners
 1   PossDet my
@@ -206,13 +255,16 @@
 
 # Adverbs
 1	Adv	    hard
+1   Adv     easy
 1   Adv     behind
 1   Adv     instead
 1   Adv     all
 
 1   Adv     never
+1   Adv     ever
 1   Adv     maybe
 1   Adv     probably
+1   Adv     finally
 
 # Averb time
 1   AdvT    next T
@@ -222,6 +274,7 @@
 1   AdvT    all of PossDet life
 1   AdvT    now
 1   AdvT    recently
+1   AdvT    quick
 
 1   T       year
 1   T       time
@@ -264,19 +317,18 @@
 1   BVerb   matter
 1   BVerb   care
 1   BVerb   hear
-
-# Verbs (past tense).
-1	PTV	    forgot
-1   PTV     said
-1   PTV     blew
-
-# Verbs (past tense, transitive)
-1	PTVT	skipped
-1   PTVT    missed
-1   PTVT    traded
-1   PTVT    overheard
-1   PTVT    heard
-
+1   BVerb   listen
+1   BVerb   skip
+1   BVerb   stay
+1   BVerb   keep
+1   BVerb   top
+1   BVerb   sing
+1   BVerb   think
+1   BVerb   say
+1   BVerb   start
+1   BVerb   fit
+1   BVerb   donate
+1   BVerb   love
 
 # Verbs (present participles).
 1	VPrPa	working
@@ -286,20 +338,46 @@
 1   VPrPa   doing
 1   VPrPa   talking
 1   VPrPa   throwing
+1   VPrPa   rapping
+1   VPrPa   laughing
+1   VPrPa   thinking
+1   VPrPa   paying
+1   VPrPa   stressing
+
+# More third person singular verbs.
+1	SiV	    blows
+1   SiV     judges
+1   SiV     knows
+1   SiV     writes
+1   SiV     ticks
+
+# Verbs (present, plural, third person).
+1	PlV   !
+
+# Verbs (past tense).
+1	PTV	    forgot
+1   PTV     said
+1   PTV     blew
+1   PTV     thought
+1   PTV     had
+1   PTV     got
+1   PTV     told
+
+# Verbs (past tense, transitive)
+1	PTVT	skipped
+1   PTVT    missed
+1   PTVT    traded
+1   PTVT    overheard
+1   PTVT    heard
+1   PTVT    started
+1   PTVT    learned
 
 # Verbs (past participle).
 1	VPaPa	gone
 1   VPaPa   seen
 1   VPaPa   caught
 1   VPaPa   got
-
-# More third person singular verbs.
-1	SiV	    blows
-1   SiV     judges
-1   SiV     knows
-
-# Verbs (present, plural, third person).
-1	PlV   !
+1   VPaPa   spoken
 
 # Modals.
 1	Mod	can
@@ -345,9 +423,3 @@
 1	WhA	    where
 1	WhA	    why
 
-# "Connectors"
-1	Con	    so
-1	Con	    while
-1	Con 	because
-1	Con 	if
-1	Con	    when

@@ -6,12 +6,15 @@
 1   START   S5
 5   START   S6
 1   START   S7
+1   START   S8
 1   START   S10
 
 1   S      S1
+1   S      S2
 1   S      S3  
 1   S      S4
 1   S      S5
+1   S      S8
 
 ###S1
 1   S1      NPVP
@@ -26,12 +29,12 @@
 1   S1      SubConj NPVP PP
 1   S1      SubConj NPVP AP
 1   S1      NPX WhDet NPVP
+1   S1      NP told OPro to be Adj
 1   S1      that's NPO
 1   S1      PhV2 PP
 
 #imperative sentences
 1   S1      BVerb 
-1   S1      BVerb Prep
 1   S1      BVerb PP
 1   S1      BVerb NPO
 1   S1      BVerb NPO PP 
@@ -39,12 +42,15 @@
 1   S1      BVerb PhV
 1   S1      PhV
 1   S1      tryna PhV PP
+1   S1      AP VPaPa PP
 1   S1      ImpAux BVerb
 1   S1      ImpAux BVerb NPO
 1   S1      ImpAux BVerb NPO AP
+1   S1      ImpAux BVerb PP Exp
 
 1   ImpAux  don't
 1   ImpAux  don't you
+1   ImpAux  never
 
 # Answer?
 
@@ -57,19 +63,36 @@
 
 ###S2 - questions
 
-10  S2      Q ?
-1   S2      CConj Q ?
+20  S2      Q ?
+5   S2      CConj Q ?
+1   S2      Q
+1   S2      CConj Q
 
 1   Q       S1
 1   Q       WhA
 1   Q       Mod NP BVerb NPO BVerb
 1   Q       Mod NP BVerb PP AP
 1   Q       Mod NP BVerb NPO PP
+1   Q       Mod NP BVerb NPO
 1   Q       WhA did NPP BVerb Adj
+1   Q       does NP BVerb PP
+1   Q       WhA TBQ supposed to BVerb DProS
 
-###S3 - is an S1 that starts with a conjucntion
+#to be q
+1   TBQ     am I
+1   TBQ     are you
+1   TBQ     is he
+1   TBQ     is she
+1   TBQ     are they
+1   TBQ     are we
+1   TBQ     is it
+1   TBQ     is NPX
+1   TBQ     are NPP
 
-1   S3      CConj S1
+###S3 - is an S1 that starts with a conjunction or a connector
+
+1   S3      CConj S
+1   S3      Con S
 
 ###S4 - combines multiple S1s
 
@@ -85,9 +108,11 @@
 
 ###S6 - sentenes with Sounds
 
-1   S6      Sounds S1
-1   S6      Sounds S2
-1   S6      Sounds , S2
+1   S6      Sounds S
+1   S6      Sounds , S
+
+1   S6      S Sounds
+1   S6      S , Sounds
 
 # Sounds?
 1   Sounds  yep yep
@@ -96,6 +121,10 @@
 ###S7 - ( sentences )
 
 1   S7      ( S )
+
+###S8 - AP as a whole sentence
+
+1   S8      AP
 
 ###S10 - super ungrammatical sentences?
 
@@ -115,15 +144,21 @@
 1   NPVP    TB not
 1   NPVP    TB VPrPa
 1   NPVP    TB PhV2
-1   NPVP    TB gonna BVerb DPro
+1   NPVP    TB gonna BVerb DProS
 1   NPVP    TB VPrPa NPO
+1   NPVP    TB VPrPa NPP
 1   NPVP    TB PhV2
 1   NPVP    TB Adj
+1   NPVP    TB NPO
 1   NPVP    I'll be Exp
+1   NPVP    I'll AP BVerb NPP
 1   NPVP    you'll AP BVerb NPO
+1   NPVP    they'd be VPrPa
 1   NPVP    Nbar 's VPrPa
+1   NPVP    Nbar 's VPrPa NPO
 
 1   NPVP    NPP VPP
+1   NPVP    NPP VPP NPO
 
 #to be
 1   TB      I'm
@@ -140,7 +175,7 @@
 1   TB      we are
 1   TB      it's
 1   TB      it is
-1   TB      NP is
+1   TB      NPX is
 1   TB      NPP is  #ungrmmatical but used
 1   TB      NPP are
 
@@ -148,8 +183,11 @@
 #Verb Phrases
 
 1   VP      PTV
+1   VP      PTV AP
+1   VP      PTV NPVP
 1   VP      BVerb
 1   VP      BVerb and BVerb
+1   VP      BVerb Adj
 1   VP      Mod BVerb
 1   VP      Mod be VPrPa
 1   VP      Mod have been VPrPa
@@ -157,15 +195,18 @@
 1   VP      PTVT
 1   VP      SiV
 1   VP      PhV
+1   VP      wanna BVerb
 
 1   VP      have been VPrPa
 1   VP      haven't VPaPa
 1   VP      don't VPaPa 
 1   VP      VPaPa
+1   VP      don't BVerb
 1   VP      don't BVerb NPO
 
 1   VPP     BVerb
 1   VPP     Mod have been Adj
+1   VPP     PTVT
 
 1   VP      AP VP
 
@@ -186,7 +227,10 @@
 1    AP      Int Int Adv 
 1    AP      AdvT
 1    AP      a lot
+1    AP      so much
 1    AP      that far
+1    AP      after all
+1    AP      for long
 1    AP      maybe that's WhA
 1    AP      down PP
 
@@ -200,6 +244,7 @@
 1   NPO     NPX
 
 10  NPX     Det Nbar
+1   NPX     DProS Nbar
 1   NPX     PossDet Nbar
 1   NPX     Noun
 1   NPX     Adj Noun
@@ -207,11 +252,13 @@
 1   NPX     Wh NPVP
 1   NPX     Wh PossPro is
 1   NPX     it all
+1   NPX     VPrPa
 
 1   NPP     Num NbarP
 1   NPP     DetP NbarP
 1   NPP     PossDet NbarP
-1   NPP     PlNoun
+1   NPP     DProP NbarP
+1   NPP     NbarP
 1   NPP     PlNoun and PlNoun
 
 10	Nbar	Noun
@@ -234,5 +281,6 @@
 1    PP      Prep PObj NPP
 1    PP      PP PP
 1    PP      not PP
+1    PP      Prep
 
 
