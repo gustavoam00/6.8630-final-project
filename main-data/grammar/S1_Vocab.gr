@@ -52,6 +52,10 @@
 1   Noun    voice
 1   Noun    lesson
 1   Noun    press
+1   Noun    kid
+1   Noun    doubt
+1   Noun    friend
+1   Noun    difference
 
 1   Noun    20 grand
 1   Noun    LA street
@@ -80,11 +84,16 @@
 1   PlNoun  rappers
 1   PlNoun  headphones
 1   PlNoun  people
+1   PlNoun  instructions
+1   PlNoun  stories
+1   PlNoun  birds
+1   PlNoun  sparks
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
 1   Proper  Friday
 1   Proper  Ed Sheeran
+1   Proper  Disney
 
 # Plural proper nouns.
 1	PlProper    !
@@ -138,6 +147,7 @@
 1   Prep    bout
 1   Prep    like
 1   Prep    to
+1   Prep    around
 
 # Numbers.
 1	Num	    more
@@ -199,6 +209,14 @@
 1   Adj     wealthy
 1   Adj     wordy
 1   Adj     whole
+1   Adj     true
+1   Adj     confused
+1   Adj     fine
+1   Adj     ready
+1   Adj     little
+1   Adj     quiet
+1   Adj     cruel
+1   Adj     ignorant
 
 1   Adj     Int Adj
 1   Adj     not Adj
@@ -213,13 +231,15 @@
 
 # Subject pronouns.
 1   SPro    I
-1   SPro    you
 1	SPro	he
 1	SPro	she
 1	SPro	it
 1	SPro	one
-1   SPro    we
-1	SPro	they
+1   SPro    you
+
+1   SProP    we
+1   SProP    you
+1	SProP	 they
 
 #Object pronouns (plural and singular)
 1	OPro    them
@@ -259,12 +279,15 @@
 1   Adv     behind
 1   Adv     instead
 1   Adv     all
+1   Adv     closer
+1   Adv     just
 
 1   Adv     never
 1   Adv     ever
 1   Adv     maybe
 1   Adv     probably
 1   Adv     finally
+1   Adv     still
 
 # Averb time
 1   AdvT    next T
@@ -284,8 +307,6 @@
 1   Int     damn
 
 # Verbs (third person singular present).
-# Note that only transitive verbs get our VerbT tag,
-# and some of those could also function as intransitives!
 1	VerbT	!
 
 # Verbs (base form).
@@ -324,11 +345,20 @@
 1   BVerb   top
 1   BVerb   sing
 1   BVerb   think
-1   BVerb   say
 1   BVerb   start
 1   BVerb   fit
 1   BVerb   donate
 1   BVerb   love
+1   BVerb   feel
+1   BVerb   recognize
+1   BVerb   grow
+1   BVerb   turn
+1   BVerb   see
+1   BVerb   figure
+1   BVerb   hope
+1   BVerb   stuck
+1   BVerb   stick
+1   BVerb   fly
 
 # Verbs (present participles).
 1	VPrPa	working
@@ -343,6 +373,7 @@
 1   VPrPa   thinking
 1   VPrPa   paying
 1   VPrPa   stressing
+1   VPrPa   turning
 
 # More third person singular verbs.
 1	SiV	    blows
@@ -362,6 +393,8 @@
 1   PTV     had
 1   PTV     got
 1   PTV     told
+1   PTV     grew
+1   PTV     knew
 
 # Verbs (past tense, transitive)
 1	PTVT	skipped
@@ -371,6 +404,8 @@
 1   PTVT    heard
 1   PTVT    started
 1   PTVT    learned
+1   PTVT    turned
+1   PTVT    fooled
 
 # Verbs (past participle).
 1	VPaPa	gone
@@ -412,6 +447,7 @@
 1	Wh      what
 1	Wh      who
 1   Wh      where
+1   Wh      when
 
 # Wh possessive pronoun.
 1	Misc	whose

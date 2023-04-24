@@ -30,8 +30,12 @@
 1   S1      SubConj NPVP AP
 1   S1      NPX WhDet NPVP
 1   S1      NP told OPro to be Adj
+1   S1      NP say NPVP
 1   S1      that's NPO
-1   S1      PhV2 PP
+1   S1      PhV PP
+1   S1      so are NPP
+
+1   S1      S1 Con S1
 
 #imperative sentences
 1   S1      BVerb 
@@ -47,6 +51,7 @@
 1   S1      ImpAux BVerb NPO
 1   S1      ImpAux BVerb NPO AP
 1   S1      ImpAux BVerb PP Exp
+1   S1      ImpAux BVerb and BVerb Prep SubConj NPVP
 
 1   ImpAux  don't
 1   ImpAux  don't you
@@ -74,9 +79,20 @@
 1   Q       Mod NP BVerb PP AP
 1   Q       Mod NP BVerb NPO PP
 1   Q       Mod NP BVerb NPO
+1   Q       Mod NPP BVerb NPO BVerb
+1   Q       Mod NPP BVerb PP AP
+1   Q       Mod NPP BVerb NPO PP
+1   Q       Mod NPP BVerb NPO
+1   Q       Mod there be NPO
 1   Q       WhA did NPP BVerb Adj
 1   Q       does NP BVerb PP
+1   Q       do NPP BVerb NPP
+1   Q       do NPP want to be Exp to BVerb WhA NP PhV
 1   Q       WhA TBQ supposed to BVerb DProS
+1   Q       TBQ Adj
+1   Q       TBQ Adj PP
+1   Q       Wh Mod NP PhV AP
+1   Q       was NP PTVT
 
 #to be q
 1   TBQ     am I
@@ -106,6 +122,8 @@
 1  S5       PP
 1  S5       CAdj PP
 
+1  S5       PP ?
+
 ###S6 - sentenes with Sounds
 
 1   S6      Sounds S
@@ -125,6 +143,7 @@
 ###S8 - AP as a whole sentence
 
 1   S8      AP
+1   S8      AP NP
 
 ###S10 - super ungrammatical sentences?
 
@@ -136,29 +155,38 @@
 
 1   NPVP    NP VP
 1   NPVP    NP VP NPO
+1   NPVP    NP VP NPO PhV
 1   NPVP    NPO NP VP
-1   NPVP    NPP NP VP
 1   NPVP    NP VP NPP
 1   NPVP    NP VP NPO NPO #indirect obj and direct obj
 1   NPVP    TB
+1   NPVP    TB BVerb
 1   NPVP    TB not
 1   NPVP    TB VPrPa
-1   NPVP    TB PhV2
+1   NPVP    TB PhV
 1   NPVP    TB gonna BVerb DProS
+1   NPVP    TB gonna BVerb DProS Prep
 1   NPVP    TB VPrPa NPO
 1   NPVP    TB VPrPa NPP
-1   NPVP    TB PhV2
+1   NPVP    TB PhV
 1   NPVP    TB Adj
 1   NPVP    TB NPO
+1   NPVP    TB AP PhV
 1   NPVP    I'll be Exp
 1   NPVP    I'll AP BVerb NPP
 1   NPVP    you'll AP BVerb NPO
 1   NPVP    they'd be VPrPa
+1   NPVP    I'd BVerb NPO
 1   NPVP    Nbar 's VPrPa
 1   NPVP    Nbar 's VPrPa NPO
+1   NPVP    NPP SPro VP
 
 1   NPVP    NPP VPP
 1   NPVP    NPP VPP NPO
+1   NPVP    NPP VPP NPP
+1   NPVP    NP PrPlQ Adj
+1   NPVP    NPP VPP NPO NPO
+1   NPVP    NPP SProP VPP
 
 #to be
 1   TB      I'm
@@ -182,42 +210,45 @@
 #############
 #Verb Phrases
 
-1   VP      PTV
-1   VP      PTV AP
-1   VP      PTV NPVP
-1   VP      BVerb
-1   VP      BVerb and BVerb
-1   VP      BVerb Adj
-1   VP      Mod BVerb
-1   VP      Mod be VPrPa
-1   VP      Mod have been VPrPa
-1   VP      Mod have been Adj
-1   VP      PTVT
+1   VP      VPX
 1   VP      SiV
 1   VP      PhV
-1   VP      wanna BVerb
+1   VP      PhV Adj
+1   VP      PrSiQ Adj
 
-1   VP      have been VPrPa
-1   VP      haven't VPaPa
-1   VP      don't VPaPa 
-1   VP      VPaPa
-1   VP      don't BVerb
-1   VP      don't BVerb NPO
+1   VPP     VPX
 
-1   VPP     BVerb
-1   VPP     Mod have been Adj
-1   VPP     PTVT
+1   VPX     VPaPa
+1   VPX     PTV
+1   VPX     PTV AP
+1   VPX     PTV NPVP
+1   VPX     PTV NPVP CConj NPVP
+1   VPX     PTVT
+1   VPX     BVerb
+1   VPX     BVerb and BVerb
+1   VPX     BVerb Adj
+1   VPX     Mod BVerb
+1   VPX     Mod be VPrPa
+1   VPX     Mod have been VPrPa
+1   VPX     Mod have been Adj
+
+#not sure if should be treated as unbiguous since its plural + you + I
+1   VPX     wanna BVerb
+1   VPX     have been VPrPa
+1   VPX     haven't VPaPa
+1   VPX     don't VPaPa 
+1   VPX     don't BVerb
+1   VPX     don't BVerb NPO
 
 1   VP      AP VP
 
 # Phrasal Verb
 1   PhV     BVerb Prep
-
-# Phrasal Verb 2
-
-1   PhV2    VPaPa Prep
-1   PhV2    Int VPaPa Prep
-1   PhV2    VPrPa Prep
+1   PhV     VPaPa Prep
+1   PhV     Int VPaPa Prep
+1   PhV     VPrPa Prep
+1   PhV     PTV Prep
+1   PhV     PTVT Prep
 
 #############
 #Adverb Phrases
@@ -233,6 +264,7 @@
 1    AP      for long
 1    AP      maybe that's WhA
 1    AP      down PP
+1    AP      Adv Adv
 
 ##############
 #Noun Phrasess
@@ -253,6 +285,7 @@
 1   NPX     Wh PossPro is
 1   NPX     it all
 1   NPX     VPrPa
+1   NPX     DProS
 
 1   NPP     Num NbarP
 1   NPP     DetP NbarP
@@ -260,6 +293,8 @@
 1   NPP     DProP NbarP
 1   NPP     NbarP
 1   NPP     PlNoun and PlNoun
+1   NPP     SProP
+1   NPP     DProP
 
 10	Nbar	Noun
 1   Nbar    Adj Noun
@@ -282,5 +317,7 @@
 1    PP      PP PP
 1    PP      not PP
 1    PP      Prep
+1    PP      Prep so much Noun
+1    PP      Prep NPVP
 
 
