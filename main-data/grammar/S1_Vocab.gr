@@ -52,10 +52,19 @@
 1   Noun    voice
 1   Noun    lesson
 1   Noun    press
+1   Noun    part
 1   Noun    kid
 1   Noun    doubt
 1   Noun    friend
 1   Noun    difference
+1   Noun    movie screen
+1   Noun    scene
+1   Noun    end
+1   Noun    world
+1   Noun    today
+1   Noun    campus
+1   Noun    mom
+1   Noun    dad
 
 1   Noun    20 grand
 1   Noun    LA street
@@ -88,6 +97,9 @@
 1   PlNoun  stories
 1   PlNoun  birds
 1   PlNoun  sparks
+1   PlNoun  years
+1   PlNoun  dances
+1   PlNoun  things
 
 # Proper nouns.  Note that our Proper tag is just for people.
 1	Proper	Elvis Duran
@@ -217,6 +229,11 @@
 1   Adj     quiet
 1   Adj     cruel
 1   Adj     ignorant
+1   Adj     important
+1   Adj     happy
+1   Adj     good
+1   Adj     great
+1   Adj     far
 
 1   Adj     Int Adj
 1   Adj     not Adj
@@ -288,6 +305,7 @@
 1   Adv     probably
 1   Adv     finally
 1   Adv     still
+1   Adv     yet
 
 # Averb time
 1   AdvT    next T
@@ -359,6 +377,10 @@
 1   BVerb   stuck
 1   BVerb   stick
 1   BVerb   fly
+1   BVerb   put
+1   BVerb   know
+1   BVerb   feel
+1   BVerb   take
 
 # Verbs (present participles).
 1	VPrPa	working
@@ -374,6 +396,7 @@
 1   VPrPa   paying
 1   VPrPa   stressing
 1   VPrPa   turning
+1   VPrPa   looking
 
 # More third person singular verbs.
 1	SiV	    blows
@@ -381,6 +404,7 @@
 1   SiV     knows
 1   SiV     writes
 1   SiV     ticks
+1   SiV     gets
 
 # Verbs (present, plural, third person).
 1	PlV   !
@@ -406,6 +430,9 @@
 1   PTVT    learned
 1   PTVT    turned
 1   PTVT    fooled
+1   PTVT    called
+1   PTVT    napped
+1   PTVT    smoked
 
 # Verbs (past participle).
 1	VPaPa	gone
@@ -413,6 +440,8 @@
 1   VPaPa   caught
 1   VPaPa   got
 1   VPaPa   spoken
+1   VPaPa   done
+1   VPaPa   made
 
 # Modals.
 1	Mod	can
@@ -449,9 +478,10 @@
 1   Wh      where
 1   Wh      when
 
+1   Wh      Wh the hell 
+
 # Wh possessive pronoun.
 1	Misc	whose
-
 
 # Wh-adverbs
 1	WhA	    how

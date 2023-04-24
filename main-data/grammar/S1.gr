@@ -14,6 +14,7 @@
 1   S      S3  
 1   S      S4
 1   S      S5
+1   S      S6
 1   S      S8
 
 ###S1
@@ -34,8 +35,14 @@
 1   S1      that's NPO
 1   S1      PhV PP
 1   S1      so are NPP
+1   S1      being Adj
+1   S1      one two three four
+1   S1      there's NPO then
 
 1   S1      S1 Con S1
+
+1   S1      NPVP SubConj
+1   S1      NPVP PP CConj
 
 #imperative sentences
 1   S1      BVerb 
@@ -72,14 +79,19 @@
 5   S2      CConj Q ?
 1   S2      Q
 1   S2      CConj Q
+1   S2      CConj , Q ?
 
 1   Q       S1
 1   Q       WhA
 1   Q       Mod NP BVerb NPO BVerb
+1   Q       Mod NP BVerb PP
 1   Q       Mod NP BVerb PP AP
 1   Q       Mod NP BVerb NPO PP
 1   Q       Mod NP BVerb NPO
+1   Q       Mod NP be Exp AP
+1   Q       Mod NP BVerb I've VPaPa NPO then
 1   Q       Mod NPP BVerb NPO BVerb
+1   Q       Mod NPP BVerb PP
 1   Q       Mod NPP BVerb PP AP
 1   Q       Mod NPP BVerb NPO PP
 1   Q       Mod NPP BVerb NPO
@@ -87,12 +99,18 @@
 1   Q       WhA did NPP BVerb Adj
 1   Q       does NP BVerb PP
 1   Q       do NPP BVerb NPP
-1   Q       do NPP want to be Exp to BVerb WhA NP PhV
+1   Q       do NPP want to be Exp to BVerb WhA NP 
+1   Q       WhA TBQ supposed to be
 1   Q       WhA TBQ supposed to BVerb DProS
 1   Q       TBQ Adj
 1   Q       TBQ Adj PP
+1   Q       TBQ PTVT NPO
 1   Q       Wh Mod NP PhV AP
+1   Q       Wh TBQ gonna do PP
 1   Q       was NP PTVT
+1   Q       was VPrPa AP
+1   Q       have NP VPaPa PossDet Adj Exp
+1   Q       are DProP NPP AP
 
 #to be q
 1   TBQ     am I
@@ -117,6 +135,9 @@
 10   S4     S SubConj S
 1    S4     S S
 
+1    S4     S , or
+1    S4     S but
+
 ###S5 - PP as a whole sentence
 
 1  S5       PP
@@ -132,13 +153,19 @@
 1   S6      S Sounds
 1   S6      S , Sounds
 
+1   S6      Sounds
+
 # Sounds?
 1   Sounds  yep yep
 1   Sounds  oh
+1   Sounds  ah
+1   Sounds  ah-ah-ah
+1   Sounds  woo-ooh
 
 ###S7 - ( sentences )
 
 1   S7      ( S )
+1   S7      S ( S )
 
 ###S8 - AP as a whole sentence
 
@@ -171,12 +198,14 @@
 1   NPVP    TB PhV
 1   NPVP    TB Adj
 1   NPVP    TB NPO
+1   NPVP    WhA TB supposed to be
 1   NPVP    TB AP PhV
 1   NPVP    I'll be Exp
 1   NPVP    I'll AP BVerb NPP
 1   NPVP    you'll AP BVerb NPO
 1   NPVP    they'd be VPrPa
 1   NPVP    I'd BVerb NPO
+1   NPVP    it'd be NPO
 1   NPVP    Nbar 's VPrPa
 1   NPVP    Nbar 's VPrPa NPO
 1   NPVP    NPP SPro VP
@@ -187,6 +216,7 @@
 1   NPVP    NP PrPlQ Adj
 1   NPVP    NPP VPP NPO NPO
 1   NPVP    NPP SProP VPP
+1   NPVP    NPP , SProP VPP NPO
 
 #to be
 1   TB      I'm
@@ -227,10 +257,12 @@
 1   VPX     BVerb
 1   VPX     BVerb and BVerb
 1   VPX     BVerb Adj
+1   VPX     BVerb it's Adj
 1   VPX     Mod BVerb
 1   VPX     Mod be VPrPa
 1   VPX     Mod have been VPrPa
 1   VPX     Mod have been Adj
+1   VPX     didn't BVerb Adj
 
 #not sure if should be treated as unbiguous since its plural + you + I
 1   VPX     wanna BVerb
@@ -264,6 +296,7 @@
 1    AP      for long
 1    AP      maybe that's WhA
 1    AP      down PP
+1    AP      forward PP
 1    AP      Adv Adv
 
 ##############
@@ -295,6 +328,7 @@
 1   NPP     PlNoun and PlNoun
 1   NPP     SProP
 1   NPP     DProP
+1   NPP     Noun and Noun
 
 10	Nbar	Noun
 1   Nbar    Adj Noun
@@ -319,5 +353,6 @@
 1    PP      Prep
 1    PP      Prep so much Noun
 1    PP      Prep NPVP
+1    PP      Prep PossPro
 
 
