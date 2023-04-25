@@ -20,11 +20,13 @@
 ###S1
 1   S1      NPVP
 1   S1      NPVP PP
-1   S1      NPVP AP
+1   S1      NPVP AP 
+1   S1      NPVP AP PP
 1   S1      NPVP PP AP
 1   S1      AP NPVP
 1   S1      AP NPVP AP
 1   S1      AP NPVP PP
+1   S1      NPVP AP SPro wanna BVerb
 1   S1      AP SubConj NPVP
 1   S1      SubConj NPVP
 1   S1      SubConj NPVP PP
@@ -100,6 +102,7 @@
 1   Q       does NP BVerb PP
 1   Q       do NPP BVerb NPP
 1   Q       do NPP want to be Exp to BVerb WhA NP 
+1   Q       do NPP want to be Exp to BVerb WhA NP PhV
 1   Q       WhA TBQ supposed to be
 1   Q       WhA TBQ supposed to BVerb DProS
 1   Q       TBQ Adj
@@ -133,6 +136,7 @@
 50   S4     S
 10   S4     S , S
 10   S4     S SubConj S
+10   S4     S CConj S
 1    S4     S S
 
 1    S4     S , or
@@ -157,6 +161,7 @@
 
 # Sounds?
 1   Sounds  yep yep
+1   Sounds  yeah
 1   Sounds  oh
 1   Sounds  ah
 1   Sounds  ah-ah-ah
@@ -258,6 +263,7 @@
 1   VPX     BVerb and BVerb
 1   VPX     BVerb Adj
 1   VPX     BVerb it's Adj
+1   VPX     BVerb NPVP
 1   VPX     Mod BVerb
 1   VPX     Mod be VPrPa
 1   VPX     Mod have been VPrPa
