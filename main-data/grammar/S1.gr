@@ -126,21 +126,19 @@
 1   TBQ     is NPX
 1   TBQ     are NPP
 
-###S3 - is an S1 that starts with a conjunction or a connector
+###S3 - combines multiple S1s
 
-1   S3      CConj S
-1   S3      Con S
+10   S3     S , S
+10   S3     S SubConj S
+10   S3     S CConj S
+#1    S3     S S
 
-###S4 - combines multiple S1s
+###S4 - is an S1 that starts or ends with a conjunction or a connector
 
-50   S4     S
-10   S4     S , S
-10   S4     S SubConj S
-10   S4     S CConj S
-1    S4     S S
-
-1    S4     S , or
-1    S4     S but
+10  S4     CConj S
+10  S4     Con S
+1   S4     S , or
+1   S4     S but
 
 ###S5 - PP as a whole sentence
 
