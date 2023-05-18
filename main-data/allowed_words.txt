@@ -10,6 +10,7 @@
 )
 's
 '
+'til
 a
 about
 above
@@ -180,6 +181,7 @@ fighting
 figure
 filled
 finale's
+finale
 finally
 find
 fine
@@ -223,6 +225,7 @@ grand
 grandfather
 grass
 great
+green
 green's
 greener
 grew
@@ -636,3 +639,4 @@ you're
 young
 your
 20
+7/11

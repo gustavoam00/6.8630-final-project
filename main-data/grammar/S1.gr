@@ -1,13 +1,15 @@
 # S1 is the start symbol of the grammar you construct
-60	START	S1
-20  START   S2
-10  START   S3
-5   START   S4
-1   START   S5
-5   START   S6
-1   START   S7
-1   START   S8
-1   START   S10
+1   START   SX
+
+60	SX  S1
+20  SX   S2
+10  SX   S3
+5   SX   S4
+1   SX   S5
+5   SX   S6
+1   SX   S7
+1   SX   S8
+1   SX   S10
 
 1   S      S1
 1   S      S2
@@ -20,9 +22,12 @@
 ###S1
 1   S1      NPVP
 1   S1      NPVP PP
+1   S1      PP   NPVP
+1   S1      NPVP PP CAdj
 1   S1      NPVP AP 
 1   S1      NPVP AP PP
 1   S1      NPVP PP AP
+1   S1      NPVP    PP  VP
 1   S1      AP NPVP
 1   S1      AP NPVP AP
 1   S1      AP NPVP PP
@@ -35,22 +40,46 @@
 1   S1      NP told OPro to be Adj
 1   S1      NP say NPVP
 1   S1      that's NPO
+1   S1      that's SubConj NPVP PP
+1   S1      that's WhA SPro wanna BVerb
 1   S1      PhV PP
 1   S1      so are NPP
 1   S1      being Adj
 1   S1      one two three four
 1   S1      there's NPO then
+1   S1      TB Adj Prep BVerb NPVP
+1   S1      there's NbarP Exp
+1   S1      there's NP    Exp
+1   S1      TB Adj  NPVP
+1   S1      SProP  went VPrPa   PP
+1   S1      NPVP   and VP NPP
+1   S1      NPVP    the way NP  did
+1   S1      TB  Wh TB supposed to be
+1   S1      TB  not Wh TB supposed to be
+1   S1      DProS   SiV OPro VP
+1   S1      DProS   made OPro VP
+1   S1      NPP    VPP  OPro    Adj
+
+
+#These are VP phrases
+1   S1      VP  Adj
+1   S1      NP Prep NPO
+1   S1      VPP PP  CAdj
+1   S1      VP  NPO NPO
+1   S1      VP NPP PP
 
 1   S1      S1 Con S1
-
 1   S1      NPVP SubConj
 1   S1      NPVP PP CConj
+1   S1      VP  Adj NP got Adj
 
 #imperative sentences
+1   S1      BVerb NPO   Adj
 1   S1      BVerb 
 1   S1      BVerb PP
 1   S1      BVerb NPO
 1   S1      BVerb NPO PP 
+1   S1      Mod BVerb NPO PP 
 1   S1      BVerb NPO PP AP
 1   S1      BVerb PhV
 1   S1      PhV
@@ -60,11 +89,28 @@
 1   S1      ImpAux BVerb NPO
 1   S1      ImpAux BVerb NPO AP
 1   S1      ImpAux BVerb PP Exp
+1   S1      CAdj Prep
 1   S1      ImpAux BVerb and BVerb Prep SubConj NPVP
+1   S1      VPrPa PP
+1   S1      keep doing NPO
+1   S1      BVerb   PossDet VPrPa
+1   S1      Mod BVerb   PossDet VPrPa
+1   S1      PTVT NPP   AP
+1   S1      BVerb  NPP
+1   S1      PTV NPP
+1   S1      PTV NPO
+1   S1      PTV NPX to BVerb
+1   S1      BVerb NPP WhDet Mod Adv BVerb NPO
+1   S1      BVerb NPO VP
+1   S1      Mod BVerb PP   BVerb   
+1   S1      PlNoun PP   NP
+1   S1      PlNoun AP
+1   S1      NP is how SPro should've VPaPa
 
 1   ImpAux  don't
 1   ImpAux  don't you
 1   ImpAux  never
+
 
 # Answer?
 
@@ -72,8 +118,6 @@
 1   S1      yeah
 1   S1      yep
 
-# Sounds?
-1   Sounds  yep yep
 
 ###S2 - questions
 
@@ -100,6 +144,7 @@
 1   Q       Mod there be NPO
 1   Q       WhA did NPP BVerb Adj
 1   Q       does NP BVerb PP
+1   Q       does NP BVerb CAdj PP
 1   Q       do NPP BVerb NPP
 1   Q       do NPP want to be Exp to BVerb WhA NP 
 1   Q       do NPP want to be Exp to BVerb WhA NP PhV
@@ -114,7 +159,27 @@
 1   Q       was VPrPa AP
 1   Q       have NP VPaPa PossDet Adj Exp
 1   Q       are DProP NPP AP
+1   Q       why's NPVP
+1   Q       why's NPO VPrPa NPO so Adj
+1   Q       who VP NPO
+1   Q       Mod NP BVerb
+1   Q       why's NPX  Exp
+1   Q       WhA TBQ to BVerb Adv
+1   Q       WhDet   makes   NPVP 
+1   Q       WhA TBQ to BVerb Adv WhDet   makes   NPVP 
+1   Q       what's VPrPa PP
+1   Q       what's Adj  with DProS
+1   Q       Mod NP Be Adj PP 
+1   Q       WhA TBQ to BVerb    NPO
+1   Q       WhA TBQ to BVerb OPro NPO
+1   Q       how's SPro BVerb
+1   Q       how's SPro BVerb again
+1   Q       can NPVP again
+1   Q       won't you BVerb NPO VP again
 
+
+1   Be  be
+1   Be  not be
 #to be q
 1   TBQ     am I
 1   TBQ     are you
@@ -131,20 +196,32 @@
 10   S3     S , S
 10   S3     S SubConj S
 10   S3     S CConj S
-#1    S3     S S
+10   S3     S CConj VPX   
+1    S3     S too
+1    S3     S again
+10   S3     S , CConj NP
 
 ###S4 - is an S1 that starts or ends with a conjunction or a connector
 
 10  S4     CConj S
 10  S4     Con S
+1   S4     CConj please S
 1   S4     S , or
 1   S4     S but
+1   S4     CConj though S
+1   S4     CConj now S
+1   S4     SubConj now , S
+1   S4     the one where S
+1   S4     SubConj S
+1   S4     won't you S
 
 ###S5 - PP as a whole sentence
 
 1  S5       PP
 1  S5       CAdj PP
+1  S5       PP PlNoun VPrPa
 
+1  S5       CAdj PP , CAdj PP
 1  S5       PP ?
 
 ###S6 - sentenes with Sounds
@@ -156,14 +233,22 @@
 1   S6      S , Sounds
 
 1   S6      Sounds
+1   S6      one Noun , Adj for OPro
 
 # Sounds?
+1   Sounds  boy
 1   Sounds  yep yep
 1   Sounds  yeah
 1   Sounds  oh
 1   Sounds  ah
 1   Sounds  ah-ah-ah
 1   Sounds  woo-ooh
+1   Sounds  oh my God
+1   Sounds  hello
+1   Sounds  goodbye
+1   Sounds  boy , oh boy
+1   Sounds  no thank you
+1   Sounds  go !
 
 ###S7 - ( sentences )
 
@@ -179,28 +264,42 @@
 
 1   S10     WhA NPP
 1   S10     NP PP is
+1   S10     NP , NP
+1   S10     NPVP AP SPro was on NPO
+1   S10     NPVP AP I'd Adv BVerb
+1   S10     NPP SProP are Adj
+1   S10     NPP
+1   S10     VP  NPO PP
+1   S10     at anything else
+1   S10     SProP , NPVP    PP
 
 #############
 #NPVP - any time we want to use a NP followed by VP, makes it easier to control for agreement (I'm, you're)
 
 1   NPVP    NP VP
+1   NPVP    NP  VP  Adj
 1   NPVP    NP VP NPO
 1   NPVP    NP VP NPO PhV
 1   NPVP    NPO NP VP
 1   NPVP    NP VP NPP
 1   NPVP    NP VP NPO NPO #indirect obj and direct obj
 1   NPVP    TB
+1   NPVP    TB the one
 1   NPVP    TB BVerb
 1   NPVP    TB not
 1   NPVP    TB VPrPa
+1   NPVP    TB AP  VPrPa AP
 1   NPVP    TB PhV
 1   NPVP    TB gonna BVerb DProS
 1   NPVP    TB gonna BVerb DProS Prep
 1   NPVP    TB VPrPa NPO
+1   NPVP    TB  Adv VPrPa   NPO
+1   NPVP    TB  VPrPa   NPO so Adj
 1   NPVP    TB VPrPa NPP
 1   NPVP    TB PhV
 1   NPVP    TB Adj
 1   NPVP    TB NPO
+1   NPVP    TB Adj Prep BVerb
 1   NPVP    WhA TB supposed to be
 1   NPVP    TB AP PhV
 1   NPVP    I'll be Exp
@@ -208,10 +307,24 @@
 1   NPVP    you'll AP BVerb NPO
 1   NPVP    they'd be VPrPa
 1   NPVP    I'd BVerb NPO
+1   NPVP    we'd BVerb PP
 1   NPVP    it'd be NPO
 1   NPVP    Nbar 's VPrPa
 1   NPVP    Nbar 's VPrPa NPO
 1   NPVP    NPP SPro VP
+1   NPVP    I've VPaPa NPO PP
+1   NPVP    NP BVerb the same
+1   NPVP    we'll   BVerb
+1   NPVP    VPrPa   NPP
+1   NPVP    who'd   BVerb
+1   NPVP    just VP
+1   NPVP    Prep Nbar 's WhA NPP VPP NPO
+1   NPVP    TB AP NP
+1   NPVP    NP  want to VP
+1   NPVP    SPro made NPO Adj
+1   NPVP    SProP  did PossDet Adj
+1   NPVP    NPP VPP to BVerb
+1   NPVP    SPro should've PTV
 
 1   NPVP    NPP VPP
 1   NPVP    NPP VPP NPO
@@ -239,6 +352,10 @@
 1   TB      NPX is
 1   TB      NPP is  #ungrmmatical but used
 1   TB      NPP are
+1   TB      NPX Exp is
+1   TB      no ones
+1   TB      NPX 's
+1   TB      NPX ain't
 
 #############
 #Verb Phrases
@@ -257,24 +374,30 @@
 1   VPX     PTV NPVP
 1   VPX     PTV NPVP CConj NPVP
 1   VPX     PTVT
+1   VPX     PTVT OPro
 1   VPX     BVerb
 1   VPX     BVerb and BVerb
 1   VPX     BVerb Adj
 1   VPX     BVerb it's Adj
 1   VPX     BVerb NPVP
 1   VPX     Mod BVerb
+1   VPX     Mod Int BVerb
 1   VPX     Mod be VPrPa
 1   VPX     Mod have been VPrPa
 1   VPX     Mod have been Adj
 1   VPX     didn't BVerb Adj
+1   VPX     didn't BVerb
 
 #not sure if should be treated as unbiguous since its plural + you + I
+1   VPX     don't wanna BVerb
 1   VPX     wanna BVerb
 1   VPX     have been VPrPa
 1   VPX     haven't VPaPa
 1   VPX     don't VPaPa 
 1   VPX     don't BVerb
 1   VPX     don't BVerb NPO
+1   VPX     VPrPa Adj
+1   VPX     really wanna BVerb
 
 1   VP      AP VP
 
@@ -302,6 +425,9 @@
 1    AP      down PP
 1    AP      forward PP
 1    AP      Adv Adv
+1    AP      Adv Pause Adv
+1    AP      after it all
+1    AP      Adv to BVerb
 
 ##############
 #Noun Phrasess
@@ -309,8 +435,9 @@
 1   NP      SPro
 1   NP      NPX
 
-1   NPO     OPro
-1   NPO     NPX
+10   NPO     OPro
+10   NPO     NPX
+1    NPO     NPX and NPX
 
 10  NPX     Det Nbar
 1   NPX     DProS Nbar
@@ -323,6 +450,8 @@
 1   NPX     it all
 1   NPX     VPrPa
 1   NPX     DProS
+1   NPX     no one
+
 
 1   NPP     Num NbarP
 1   NPP     DetP NbarP
@@ -330,6 +459,7 @@
 1   NPP     DProP NbarP
 1   NPP     NbarP
 1   NPP     PlNoun and PlNoun
+1   NPP     let's
 1   NPP     SProP
 1   NPP     DProP
 1   NPP     Noun and Noun
@@ -341,7 +471,9 @@
 
 10  NbarP   PlNoun
 1   NbarP   PossDet PlNoun
+1   NbarP   no PlNoun
 1   NbarP   Adj PlNoun
+1   NbarP   PossDet Adj PlNoun
 
 
 ###############
@@ -358,5 +490,6 @@
 1    PP      Prep so much Noun
 1    PP      Prep NPVP
 1    PP      Prep PossPro
+1    PP      CAdj   Prep
 
 
