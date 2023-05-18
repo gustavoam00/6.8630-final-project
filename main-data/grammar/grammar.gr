@@ -1,7 +1,6 @@
-# S1 is the start symbol of the grammar you construct
 1   START   SX
 
-60	SX  S1
+60	SX   S1
 20  SX   S2
 10  SX   S3
 5   SX   S4
@@ -11,23 +10,23 @@
 1   SX   S8
 1   SX   S10
 
-1   S      S1
-1   S      S2
-1   S      S3  
-1   S      S4
-1   S      S5
-1   S      S6
-1   S      S8
+1   S    S1
+1   S    S2
+1   S    S3  
+1   S    S4
+1   S    S5
+1   S    S6
+1   S    S8
 
 ###S1
 1   S1      NPVP
 1   S1      NPVP PP
-1   S1      PP   NPVP
+1   S1      PP NPVP
 1   S1      NPVP PP CAdj
 1   S1      NPVP AP 
 1   S1      NPVP AP PP
 1   S1      NPVP PP AP
-1   S1      NPVP    PP  VP
+1   S1      NPVP PP VP
 1   S1      AP NPVP
 1   S1      AP NPVP AP
 1   S1      AP NPVP PP
@@ -45,36 +44,30 @@
 1   S1      PhV PP
 1   S1      so are NPP
 1   S1      being Adj
-1   S1      one two three four
 1   S1      there's NPO then
 1   S1      TB Adj Prep BVerb NPVP
 1   S1      there's NbarP Exp
-1   S1      there's NP    Exp
-1   S1      TB Adj  NPVP
-1   S1      SProP  went VPrPa   PP
-1   S1      NPVP   and VP NPP
-1   S1      NPVP    the way NP  did
-1   S1      TB  Wh TB supposed to be
-1   S1      TB  not Wh TB supposed to be
-1   S1      DProS   SiV OPro VP
-1   S1      DProS   made OPro VP
-1   S1      NPP    VPP  OPro    Adj
+1   S1      there's NP Exp
+1   S1      TB Adj NPVP
+1   S1      SProP went VPrPa PP
+1   S1      NPVP and VP NPP
+1   S1      NPVP the way NP did
+1   S1      TB Wh TB supposed to be
+1   S1      TB not Wh TB supposed to be
+1   S1      DProS SiV OPro VP
+1   S1      DProS made OPro VP
+1   S1      NPP VPP OPro Adj
 
 
 #These are VP phrases
-1   S1      VP  Adj
-1   S1      NP Prep NPO
-1   S1      VPP PP  CAdj
-1   S1      VP  NPO NPO
+1   S1      VP Adj
+1   S1      VPP PP CAdj
+1   S1      VP NPO NPO
 1   S1      VP NPP PP
-
-1   S1      S1 Con S1
-1   S1      NPVP SubConj
-1   S1      NPVP PP CConj
-1   S1      VP  Adj NP got Adj
+1   S1      VP Adj NP got Adj
 
 #imperative sentences
-1   S1      BVerb NPO   Adj
+1   S1      BVerb NPO Adj
 1   S1      BVerb 
 1   S1      BVerb PP
 1   S1      BVerb NPO
@@ -93,26 +86,27 @@
 1   S1      ImpAux BVerb and BVerb Prep SubConj NPVP
 1   S1      VPrPa PP
 1   S1      keep doing NPO
-1   S1      BVerb   PossDet VPrPa
-1   S1      Mod BVerb   PossDet VPrPa
-1   S1      PTVT NPP   AP
-1   S1      BVerb  NPP
+1   S1      BVerb PossDet VPrPa
+1   S1      Mod BVerb PossDet VPrPa
+1   S1      PTVT NPP AP
+1   S1      BVerb NPP
 1   S1      PTV NPP
 1   S1      PTV NPO
 1   S1      PTV NPX to BVerb
 1   S1      BVerb NPP WhDet Mod Adv BVerb NPO
 1   S1      BVerb NPO VP
-1   S1      Mod BVerb PP   BVerb   
-1   S1      PlNoun PP   NP
+1   S1      Mod BVerb PP BVerb   
+1   S1      PlNoun PP NP
 1   S1      PlNoun AP
 1   S1      NP is how SPro should've VPaPa
+1   S1      NP Prep NPO
 
 1   ImpAux  don't
 1   ImpAux  don't you
 1   ImpAux  never
 
 
-# Answer?
+# Answer
 
 1   S1      no
 1   S1      yeah
@@ -196,6 +190,7 @@
 10   S3     S , S
 10   S3     S SubConj S
 10   S3     S CConj S
+10   S3     S Con S
 10   S3     S CConj VPX   
 1    S3     S too
 1    S3     S again
@@ -214,6 +209,8 @@
 1   S4     the one where S
 1   S4     SubConj S
 1   S4     won't you S
+1   S1     S SubConj
+1   S1     S CConj
 
 ###S5 - PP as a whole sentence
 
@@ -235,21 +232,6 @@
 1   S6      Sounds
 1   S6      one Noun , Adj for OPro
 
-# Sounds?
-1   Sounds  boy
-1   Sounds  yep yep
-1   Sounds  yeah
-1   Sounds  oh
-1   Sounds  ah
-1   Sounds  ah-ah-ah
-1   Sounds  woo-ooh
-1   Sounds  oh my God
-1   Sounds  hello
-1   Sounds  goodbye
-1   Sounds  boy , oh boy
-1   Sounds  no thank you
-1   Sounds  go !
-
 ###S7 - ( sentences )
 
 1   S7      ( S )
@@ -260,7 +242,7 @@
 1   S8      AP
 1   S8      AP NP
 
-###S10 - super ungrammatical sentences?
+###S9 - super ungrammatical sentences
 
 1   S10     WhA NPP
 1   S10     NP PP is
